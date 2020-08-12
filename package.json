@@ -1,19 +1,23 @@
 {
-  "name": "guia_hoteles",
-  "version": "1.0.0",
-  "description": "Nuestro primer proyecto de node js",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexDuOl/guia_hoteles.git"
-  },
-  "author": "Alex Durán",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexDuOl/guia_hoteles/issues"
-  },
-  "homepage": "https://github.com/AlexDuOl/guia_hoteles#readme"
+    "name": "guia_hoteles",
+    "version": "1.0.0",
+    "description": "Nuestro primer proyecto de node js",
+    "main": "index.html",
+    "scripts": {
+        "dev": "lite-server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexDuOl/guia_hoteles.git"
+    },
+    "author": "Alex Durán",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlexDuOl/guia_hoteles/issues"
+    },
+    "homepage": "https://github.com/AlexDuOl/guia_hoteles#readme",
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    }
 }
