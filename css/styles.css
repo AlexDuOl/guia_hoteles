@@ -62,6 +62,10 @@
     align-items: flex-start;
 }
 
+.footer-address-icon {
+    padding-right: 10px;
+}
+
 @media (max-width: 576px) {
     .container-info {
         border-bottom: 1px solid rgb(190, 190, 174);
