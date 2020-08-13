@@ -1,21 +1,81 @@
 .jumbotron {
-    background-color: rgba(255, 166, 0, 0.884);
-    color: black;
-}
-
-.footer {
-    padding: 10px 10px 0 10px;
-    background-color: rgba(255, 166, 0, 0.884);
-    margin-bottom: 0px;
-    margin-top: 10px;
+    background-color: rgb(6, 122, 131);
+    color: #fff;
+    border-radius: 0rem;
 }
 
 .card-hotel {
-    flex: 1 150px;
-    padding: 2px 5px 2px 5px;
-    margin-top: 10px;
+    flex: 1 200px;
+    padding: 20px;
+    margin: 10px 10px;
+    border: 1px solid rgb(190, 190, 174);
+    border-radius: 10px;
 }
 
 .btn-reserva {
     width: 100%;
+}
+
+.items-footer,
+.items-footer a {
+    color: #fff;
+    padding: 10px;
+}
+
+.container-productos {
+    padding: 30px 0;
+}
+
+.container-productos h4 {
+    text-align: center;
+}
+
+.container-productos p {
+    text-align: justify;
+}
+
+.productos-row:last-child {
+    margin-top: 30px;
+}
+
+.container-info {
+    flex: 1 150px;
+    padding: 20px;
+    margin: 10px 10px;
+    border-left: none;
+    text-align: center;
+}
+
+.container-info:first-child {
+    border-left: none;
+}
+
+.footer {
+    padding: 10px 10px 0 10px;
+    background-color: rgb(6, 122, 131);
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.items-footer-sections {
+    align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+    .container-info {
+        border-bottom: 1px solid rgb(190, 190, 174);
+    }
+    .container-info,
+    .card-hotel {
+        flex: 1 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-info {
+        border-left: 1px solid rgb(190, 190, 174);
+    }
+    .items-footer-sections {
+        align-items: flex-end;
+    }
 }
