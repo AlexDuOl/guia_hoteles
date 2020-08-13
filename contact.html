@@ -22,9 +22,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                <li class="nav-item active"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
                 <li class="nav-item"><a href="./prices.html" class="nav-link">Precios</a></li>
-                <li class="nav-item"><a href="./contact.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item active"><a href="#" class="nav-link">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -37,13 +37,55 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="./about.html">Nosotros</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="./prices.html">Precios</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
 
-        <span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nihil, ut dolore, possimus dolorum facilis repellendus laboriosam pariatur vero, in nisi. Odio dolorem quia, harum minus dicta nemo. Amet, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aperiam hic nihil! Inventore similique a obcaecati, corrupti ipsam reprehenderit quibusdam quasi alias qui doloremque veritatis officia possimus voluptatum excepturi eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi adipisci odio corrupti a, officia ipsa perferendis veritatis excepturi eum ea incidunt delectus cupiditate dolores dolorem. Ad nisi error neque dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi deleniti at eaque suscipit sapiente. Praesentium qui vel voluptatum magni at quis cum? Laborum amet eius quae et at, reprehenderit nobis.
-        </span>
+        <h1>Dejanos tu comentario</h1>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="estado">Estado</label>
+                    <select id="estado" class="form-control">
+                        <option selected>Jalisco</option>
+                        <option>Durango</option>
+                        <option>Ciudad de México</option>
+                        <option>Sinaloa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" id="gridCheck" class="form-check-input">
+                    <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-info">Enviar</button>
+        </form>
     </div>
     <footer class="footer">
         <div class="row">
