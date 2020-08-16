@@ -1,13 +1,30 @@
-.jumbotron {
+.jumbotron-text {
     background-color: rgb(6, 122, 131);
     color: #fff;
     border-radius: 0rem;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
+}
+
+.jumbotron-img {
+    height: 300px;
+    background-image: url("/images/htl_0.jpg");
+    border-radius: 0rem;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+.container-banner {
+    height: 200px;
+    border: 1px solid green;
 }
 
 .card-hotel {
     flex: 1 200px;
     margin-top: 10px;
+}
+
+.card-text {
+    margin-top: 20px;
 }
 
 .btn-reserva {
