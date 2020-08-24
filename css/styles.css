@@ -91,3 +91,7 @@
         align-items: flex-end;
     }
 }
+
+.tab-content {
+    padding-top: 10px;
+}

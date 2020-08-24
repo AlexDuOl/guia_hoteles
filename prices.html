@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <script src="https://kit.fontawesome.com/4a677d1ce8.js" crossorigin="anonymous"></script>
     <title>Precios</title>
 </head>
@@ -42,62 +42,84 @@
             </ol>
         </nav>
 
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <th>Calidad</th>
-                    <th>Guadalajara</th>
-                    <th>Puerto Vallarta</th>
-                    <th>Colima</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star"></span></td>
-                        <td>$200</td>
-                        <td>$210</td>
-                        <td>$250</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star"></span><span class="oi oi-star"></span>
-                        </td>
-                        <td>$300</td>
-                        <td>$310</td>
-                        <td>$350</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$400</td>
-                        <td>$410</td>
-                        <td>$450</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>$500</td>
-                        <td>$510</td>
-                        <td>$550</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>$600</td>
-                        <td>$610</td>
-                        <td>$650</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">Tarjetas aceptadas</div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tarjeta débito</li>
-                    <li class="list-group-item">Tarjeta crédito</li>
-                    <li class="list-group-item">Tarjeta Gold</li>
-                </ul>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a href="#compara" class="nav-link active" id="compara-tab" data-toggle="tab" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tarjetas" class="nav-link" id="tarjetas-tab" data-toggle="tab" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a href="#comentarios" class="nav-link" id="comentarios-tab" data-toggle="tab" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Calidad</th>
+                            <th>Guadalajara</th>
+                            <th>Puerto Vallarta</th>
+                            <th>Colima</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>$200</td>
+                                <td>$210</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span><span class="oi oi-star"></span>
+                                </td>
+                                <td>$300</td>
+                                <td>$310</td>
+                                <td>$350</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>$400</td>
+                                <td>$410</td>
+                                <td>$450</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$500</td>
+                                <td>$510</td>
+                                <td>$550</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$600</td>
+                                <td>$610</td>
+                                <td>$650</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">Tarjetas aceptadas</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjeta débito</li>
+                            <li class="list-group-item">Tarjeta crédito</li>
+                            <li class="list-group-item">Tarjeta Gold</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                Comentarios
             </div>
         </div>
+
+
     </div>
     <footer class="footer">
         <div class="row">
@@ -124,9 +146,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
