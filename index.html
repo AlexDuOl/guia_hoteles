@@ -78,7 +78,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ">
                     <img src="images/htl_1.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Hotel Posada</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen bebidas incluidas">Hotel Posada</h5>
                         <h6 class="card-subtitle text-muted ">Chile</h6>
                         <p class="card-text ">Amplias habitaciones, cerca de variados restaurantes, centro comercial cerca.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -88,7 +88,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_2.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Hotel Nueva España</h5>
+                        <h5 class="card-title " data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen bebidas incluidas">Hotel Nueva España</h5>
                         <h6 class="card-subtitle text-muted ">México</h6>
                         <p class="card-text ">Comodidad al mejor precio. Todo incluido.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -236,8 +236,13 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js "></script>
-    <script src="node_modules/popper.js/dist/popper.min.js "></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
