@@ -78,7 +78,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ">
                     <img src="images/htl_1.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen bebidas incluidas">Hotel Posada</h5>
+                        <h5 class="card-title" data-toggle="popover" title="Promociones" data-content="Consulta las primociones vigentes" data-placement="top">Hotel Posada</h5>
                         <h6 class="card-subtitle text-muted ">Chile</h6>
                         <p class="card-text ">Amplias habitaciones, cerca de variados restaurantes, centro comercial cerca.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -88,7 +88,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_2.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title " data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen bebidas incluidas">Hotel Nueva España</h5>
+                        <h5 class="card-title " data-toggle="popover" title="Promociones" data-content="Consulta las primociones vigentes" data-placement="top">Hotel Nueva España</h5>
                         <h6 class="card-subtitle text-muted ">México</h6>
                         <p class="card-text ">Comodidad al mejor precio. Todo incluido.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -98,7 +98,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_3.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Hotel Santa Lucia</h5>
+                        <h5 class="card-title " data-toggle="popover" title="Promociones" data-content="Consulta los descuentos incluidos" data-placement="top">Hotel Santa Lucia</h5>
                         <h6 class="card-subtitle text-muted ">España</h6>
                         <p class="card-text ">Disfruta de un ambiente rustico rodeado de areas verdes.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -108,7 +108,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_4.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Hotel México</h5>
+                        <h5 class="card-title " data-toggle="popover" title="Promociones" data-content="Consulta los descuentos incluidos" data-placement="top">Hotel México</h5>
                         <h6 class="card-subtitle text-muted ">México</h6>
                         <p class="card-text ">Disfruta de habitaciones amplais y comodas.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -121,7 +121,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ">
                     <img src="images/htl_5.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Hotel Alameda</h5>
+                        <h5 class="card-title " data-toggle="popover" title="Promociones" data-content="Obten bebidas gratis" data-placement="top">Hotel Alameda</h5>
                         <h6 class="card-subtitle text-muted ">México</h6>
                         <p class="card-text ">El Hotel Alameda se encuentra ubicado en el centro de la ciudad. Cuenta con amplaias habitaciones y la mejor comida del lugar.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -131,7 +131,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_7.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5 class="card-title ">Hotel San Francisco</h5>
+                        <h5 class="card-title " data-toggle="popover" title="Promociones" data-content="Obten bebidas gratis" data-placement="top">Hotel San Francisco</h5>
                         <h6 class="card-subtitle text-muted ">USA</h6>
                         <p class="card-text ">Hotel moderno con varias actividades recreativas.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -141,7 +141,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_6.jpeg " alt="Hotel imagen " class="card-img-top ">
                     <div class="card-body ">
-                        <h5>Hotel Guadalajara</h5>
+                        <h5 class="card-title " data-toggle="popover" title="Promociones" data-placement="top" data-content="Obten bebidas gratis">Hotel Guadalajara</h5>
                         <h6 class="card-subtitle text-muted ">México</h6>
                         <p class="card-text ">Amplias habitaciones y la mejor comida del lugar.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
@@ -236,11 +236,13 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
     <script>
         $(function() {
-            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
         })
     </script>
 </body>
