@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/4a677d1ce8.js" crossorigin="anonymous"></script>
     <title>Tu guia Hoteles</title>
 </head>
@@ -148,7 +149,7 @@
                         <p class="card-text ">El Hotel Alameda se encuentra ubicado en el centro de la ciudad. Cuenta con amplaias habitaciones y la mejor comida del lugar.</p>
                         <button class="btn btn-outline-info" data-toggle="modal" data-target="#contacto">Contacto</button>
                     </div>
-                    <div><button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button></div>
+                    <div><button id="reservaBtn" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva"><span class="oi oi-plus footer-address-icon"></span>Reservar</button></div>
                 </div>
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 ">
                     <img src="images/htl_7.jpeg " alt="Hotel imagen " class="card-img-top ">
@@ -260,20 +261,42 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	
-	<script>
-		$(function () {
-		  $('[data-toggle="tooltip"]').tooltip()
-		})
 
-		$(function () {
-		  $('[data-toggle="popover"]').popover()
-		})
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
 
-		$('.carousel').carousel({
-		  interval: 3000,
-		})
-	</script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+
+        $('.carousel').carousel({
+            interval: 3000,
+        })
+
+        $("#reserva").on('show.bs.modal', function(e) {
+            console.log("Mostrando modal");
+            $("#reservaBtn").removeClass("btn-info");
+            $("#reservaBtn").addClass("btn-primary");
+            $("#reservaBtn").prop("disabled", true);
+        })
+
+        $("#reserva").on('shown.bs.modal', function(e) {
+            console.log("Cerrando modal");
+        })
+
+        $("#reserva").on('hide.bs.modal', function(e) {
+            console.log("se oculta modal");
+        })
+
+        $("#reserva").on('hidden.bs.modal', function(e) {
+            console.log("Se oculto modal");
+            $("#reservaBtn").removeClass("btn-primary");
+            $("#reservaBtn").addClass("btn-info");
+            $("#reservaBtn").prop("disabled", false);
+        })
+    </script>
 </body>
 
 </html>
