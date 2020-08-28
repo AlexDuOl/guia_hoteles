@@ -1,0 +1,122 @@
+$aqua: rgb(6, 122, 131);
+$white: #ffffff;
+$green: rgb(0, 128, 0);
+$beige:rgb(190, 190, 174);
+@mixin margenes($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin paddings($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+.jumbotron {
+    background-color: $aqua;
+    color: $white;
+    border-radius: 0rem;
+    @include margenes(50px, 0, 0, 0);
+}
+
+.container-banner {
+    height: 200px;
+    border: 1px solid $green;
+}
+
+.card-hotel {
+    flex: 1 200px;
+    @include margenes(10px, 0, 0, 0);
+}
+
+.card-text {
+    @include margenes(20px, 0, 0, 0);
+}
+
+.btn-reserva {
+    width: 100%;
+    border-radius: 0;
+}
+
+.items-footer,
+.items-footer a {
+    color: $white;
+    @include paddings(10px, 10px, 10px, 10px);
+}
+
+.container-productos {
+    @include paddings(30px, 0, 30px, 0);
+}
+
+.container-productos h4 {
+    text-align: center;
+}
+
+.container-productos p {
+    text-align: justify;
+}
+
+.productos-row:last-child {
+    @include margenes(30px, 0, 0, 0);
+}
+
+.container-info {
+    flex: 1 150px;
+    @include paddings(20px, 20px, 20px, 20px);
+    @include margenes(10px, 10px, 10px, 10px);
+    border-left: none;
+    text-align: center;
+}
+
+.container-info:first-child {
+    border-left: none;
+}
+
+.footer {
+    background-color: $aqua;
+    @include paddings(10px, 10px, 0, 10px);
+    @include margenes(30px, 0, 0, 0);
+}
+
+.items-footer-sections {
+    align-items: flex-start;
+}
+
+.footer-address-icon {
+    @include paddings(0, 10px, 0, 0);
+}
+
+@media (max-width: 576px) {
+    .container-info {
+        border-bottom: 1px solid $beige;
+    }
+    .container-info,
+    .card-hotel {
+        flex: 1 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-info {
+        border-left: 1px solid $beige;
+    }
+    .items-footer-sections {
+        align-items: flex-end;
+    }
+}
+
+.tab-content {
+    @include paddings(10px, 0, 0, 0);
+}
+
+.collapse-butons {
+    @include paddings(0, 0, 10px, 0);
+}
+
+.container-caroulse {
+    @include paddings(0, 0, 10px, 0);
+}

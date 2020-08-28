@@ -1,105 +1,122 @@
 .jumbotron {
-    background-color: rgb(6, 122, 131);
-    color: #fff;
-    border-radius: 0rem;
-    margin-top: 50px;
-}
+  background-color: #067a83;
+  color: #ffffff;
+  border-radius: 0rem;
+  margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .container-banner {
-    height: 200px;
-    border: 1px solid green;
-}
+  height: 200px;
+  border: 1px solid green; }
 
 .card-hotel {
-    flex: 1 200px;
-    margin-top: 10px;
-}
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .card-text {
-    margin-top: 20px;
-}
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .btn-reserva {
-    width: 100%;
-    border-radius: 0;
-}
+  width: 100%;
+  border-radius: 0; }
 
 .items-footer,
 .items-footer a {
-    color: #fff;
-    padding: 10px;
-}
+  color: #ffffff;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px; }
 
 .container-productos {
-    padding: 30px 0;
-}
+  padding-top: 30px;
+  padding-right: 0;
+  padding-bottom: 30px;
+  padding-left: 0; }
 
 .container-productos h4 {
-    text-align: center;
-}
+  text-align: center; }
 
 .container-productos p {
-    text-align: justify;
-}
+  text-align: justify; }
 
 .productos-row:last-child {
-    margin-top: 30px;
-}
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .container-info {
-    flex: 1 150px;
-    padding: 20px;
-    margin: 10px 10px;
-    border-left: none;
-    text-align: center;
-}
+  flex: 1 150px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-left: none;
+  text-align: center; }
 
 .container-info:first-child {
-    border-left: none;
-}
+  border-left: none; }
 
 .footer {
-    padding: 10px 10px 0 10px;
-    background-color: rgb(6, 122, 131);
-    margin-bottom: 0px;
-    margin-top: 30px;
-}
+  background-color: #067a83;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .items-footer-sections {
-    align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .footer-address-icon {
-    padding-right: 10px;
-}
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 0; }
 
 @media (max-width: 576px) {
-    .container-info {
-        border-bottom: 1px solid rgb(190, 190, 174);
-    }
-    .container-info,
-    .card-hotel {
-        flex: 1 300px;
-    }
-}
+  .container-info {
+    border-bottom: 1px solid #bebeae; }
+  .container-info,
+  .card-hotel {
+    flex: 1 300px; } }
 
 @media (min-width: 768px) {
-    .container-info {
-        border-left: 1px solid rgb(190, 190, 174);
-    }
-    .items-footer-sections {
-        align-items: flex-end;
-    }
-}
+  .container-info {
+    border-left: 1px solid #bebeae; }
+  .items-footer-sections {
+    align-items: flex-end; } }
 
 .tab-content {
-    padding-top: 10px;
-}
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0; }
 
 .collapse-butons {
-    padding-bottom: 10px;
-}
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0; }
 
 .container-caroulse {
-    padding-bottom: 10px;
-}
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0; }
