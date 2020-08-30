@@ -76,6 +76,12 @@ $beige:rgb(190, 190, 174);
     border-left: none;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
 .footer {
     background-color: $aqua;
     @include paddings(10px, 10px, 0, 10px);
@@ -97,6 +103,9 @@ $beige:rgb(190, 190, 174);
     .container-info,
     .card-hotel {
         flex: 1 300px;
+    }
+    .collapse-buttons-btn {
+        @include margenes(0, 0, 10px, 0);
     }
 }
 
